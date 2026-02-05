@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# E-Kokurikulum SK Gombak Setia
 
-This contains everything you need to run your app locally.
+Sistem pengurusan dan penghantaran laporan aktiviti kokurikulum serta minit mesyuarat agung untuk kegunaan warga guru SK Gombak Setia.
 
-View your app in AI Studio: https://ai.studio/apps/drive/15S-n3w_LEOzpd0ju6MYu7d0fKQas_U3G
+## Ciri-ciri Utama
+- **Laporan Perjumpaan Mingguan**: Borang digital dengan fungsi lampiran gambar (maks 4 keping).
+- **Minit Mesyuarat Agung**: Penjanaan automatik minit mesyuarat dan carta organisasi yang sedia untuk dicetak.
+- **Dashboard Analisis**: Paparan statistik trend penghantaran laporan dan agihan unit.
+- **Auto-Sync Google Sheets**: Data dihantar secara automatik ke Google Spreadsheet sekolah melalui Google Apps Script.
 
-## Run Locally
+## Teknologi Digunakan
+- React 18 (melalui ESM.sh)
+- Tailwind CSS (Styling)
+- Lucide React (Icons)
+- Google Apps Script (Backend API)
+- LocalStorage (Offline caching)
 
-**Prerequisites:**  Node.js
+## Cara Penggunaan
+1. Layari URL GitHub Pages yang disediakan.
+2. Pilih modul yang ingin digunakan (Laporan atau Minit).
+3. Isi borang dengan lengkap.
+4. Klik **Pratinjau** untuk menyemak maklumat dan mencetak (jika perlu).
+5. Klik **Hantar** untuk menyimpan data ke awan.
 
+## Pautan Pantas
+- [Google Spreadsheet Data](https://docs.google.com/spreadsheets/d/18sYXQto5_aBp4YAp2bV3UKo8Cpj5gmqyjFxUTEpfdVk/edit)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+*Dibangunkan untuk kemudahan pengurusan Kokurikulum SKGS.*

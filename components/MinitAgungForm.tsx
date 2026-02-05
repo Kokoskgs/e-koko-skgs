@@ -29,13 +29,16 @@ const MinitAgungForm: React.FC = () => {
     const { name, value } = e.target;
     if (name.includes('.')) {
       const [parent, child] = name.split('.');
-      setFormData(prev => ({
-        ...prev,
-        [parent]: { 
-          ...(prev[parent as keyof MinitMesyuaratAgung] as any || {}), 
-          [child]: value 
-        }
-      }));
+      setFormData(prev => {
+        const parentData = (prev[parent as keyof MinitMesyuaratAgung] as any) || {};
+        return {
+          ...prev,
+          [parent]: { 
+            ...parentData, 
+            [child]: value 
+          }
+        };
+      });
     } else {
       setFormData(prev => ({ ...prev, [name]: value }));
     }
@@ -52,7 +55,7 @@ const MinitAgungForm: React.FC = () => {
       alert("Minit & Carta Organisasi berjaya dihantar!");
       window.location.reload();
     } catch (error) {
-      alert("Ralat menghantar laporan. Sila cuba lagi.");
+      alert("Gagal menghantar laporan. Sila cuba lagi.");
       setStep('form');
     }
   };
