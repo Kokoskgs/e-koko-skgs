@@ -1,0 +1,7 @@
+{
+  "name": "E-Kokurikulum SK Gombak Setia",
+  "description": "Sistem penghantaran laporan perjumpaan aktiviti kokurikulum dan minit mesyuarat agung untuk SK Gombak Setia.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
